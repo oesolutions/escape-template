@@ -1,0 +1,13 @@
+plugins {
+    id 'java'
+}
+
+version = '0.0.1'
+
+processResources {
+    inputs.property "version", project.version
+
+    filesMatching("info.json") {
+        expand "version": project.version
+    }
+}

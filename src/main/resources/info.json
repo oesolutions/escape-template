@@ -1,0 +1,12 @@
+{
+  "schemaVersion": 1,
+  "version": "${version}",
+  "entrypoints": {
+    "main": [
+      "com.example.Entrypoint"
+    ],
+    "client": [
+      "com.example.Entrypoint\$Client"
+    ]
+  }
+}
