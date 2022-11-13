@@ -11,3 +11,10 @@ processResources {
         expand "version": project.version
     }
 }
+
+task dumpJson {
+    dependsOn tasks.processResources
+    doLast {
+        println file('build/resources/main/info.json').text
+    }
+}
